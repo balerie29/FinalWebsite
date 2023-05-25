@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8e9f8;
+    }
+
+    header {
+      background-color: #e54f78;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .intro {
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      background-color: #ffe6ea;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #ff719e;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff4d80;
+    }
+
+    footer {
+      background-color: #e54f78;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // JavaScript code for interactive effects
+    window.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('header');
+      header.addEventListener('click', () => {
+        header.style.backgroundColor = '#ff88aa';
+      });
+
+      const main = document.querySelector('main');
+      main.addEventListener('mouseover', () => {
+        main.style.transform = 'scale(1.05)';
+      });
+      main.addEventListener('mouseout', () => {
+        main.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>About Me!</h1>
+  </header>
+  <main>
+    <h2>Hi, This is GlamGuide!</h2>
+    <div class="intro">
+      <p>Welcome to our makeup recommendation website, where beauty meets expertise! We are dedicated to helping you enhance your natural beauty and discover the 
+      perfect makeup products for your unique style and preferences. With a vast collection of cosmetics from renowned brands and insightful reviews from beauty enthusiasts, 
+      we aim to be your go-to source for all things makeup. Whether you're a makeup novice or an experienced artist, our platform provides tailored recommendations, expert tips, 
+      and tutorials to ensure you achieve flawless looks every time. Indulge in a seamless browsing experience, explore the latest trends, and uncover your signature style with 
+      our comprehensive range of cosmetics. Let us guide you on a transformative beauty journey that empowers you to express your individuality with confidence. Unleash your 
+      inner artist and unlock a world of endless possibilities with our makeup recommendation website.</p>
+    </div>
+    <div class="highlight">
+      <h3>Stay Glamorous!</h3>
+      <p>Sign up now to receive our exclusive beauty tips and updates.</p>
+      <a href="#" class="button">Sign Up</a>
+    </div>
+  </main>
+  <footer>
+    <p id="current-year">&copy; 2023 Makeup Recommendations</p>
+    <p>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </p>
+    <script>
+      // JavaScript code to display the current year dynamically
+      const currentYear = new Date().getFullYear();
+      const yearElement = document.getElementById('current-year');
+      yearElement.innerText = yearElement.innerText.replace('2023', currentYear.toString());
+    </script>
+  </footer>
+</body>
+</html>
